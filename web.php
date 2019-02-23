@@ -245,6 +245,8 @@ Route::group(['namespace' => 'Admin', 'prefix' =>'backend',  'as' => 'admin.', '
         Route::post('/announcement/update', 'NewsController@update');
         Route::get('/announcement/delete/{id}', 'NewsController@delete');
         Route::post('/announcement/update-status', 'NewsController@updateStatus');
+	
+	 	Route::post('/pdf/generate', 'PDFController@generate');
         
 });
 
